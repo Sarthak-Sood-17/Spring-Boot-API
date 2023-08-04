@@ -15,9 +15,8 @@ public class ApiController {
     @GetMapping("/")
     public String getDateAndTime()
     {
-        if(flag) {
+        if(flag)
             dateAndtime = LocalDateTime.now().format(myFormatObj);
-        }
 
         System.out.println("get Method called");
         return dateAndtime;
