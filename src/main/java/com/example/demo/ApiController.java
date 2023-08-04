@@ -35,5 +35,10 @@ public class ApiController {
         return dateAndtime;
     }
 
-
+    @DeleteMapping()
+    public String deleteDateAndTime()
+    {
+        flag = true;
+        return dateAndtime + " Deleted";
+    }
 }
