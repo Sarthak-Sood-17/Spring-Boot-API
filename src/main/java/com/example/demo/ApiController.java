@@ -23,4 +23,17 @@ public class ApiController {
     }
 
 
+    @PutMapping("/{newdata}")
+    public String updateDateAndTime(@PathVariable String newdata)
+    {
+        dateAndtime = newdata;
+
+        flag = false;
+
+        System.out.println(dateAndtime);
+
+        return dateAndtime;
+    }
+
+
 }
